@@ -74,6 +74,9 @@ void donneesCallback(const gradientpkg::mesure::ConstPtr& msg){
     gradient.push_back(g);
     
     gradientpkg::gradient msg;
+
+    msg.header.stamp = ros::Time::now();
+    msg.header.frame_id = "/gradient";
     msg.px=g.px; msg.py=g.py;
     msg.gx=g.gx/sqrt(pow(g.gx,2)+pow(g.gy,2)); 
     msg.gy=g.gy/sqrt(pow(g.gx,2)+pow(g.gy,2));

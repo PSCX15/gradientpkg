@@ -49,6 +49,7 @@ add_message_files(
    FILES
    gradient.msg
    mesure.msg
+   particule.msg
    
 )
 
