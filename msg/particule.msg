@@ -1,1 +1,1 @@
-float32 particule
+float32 concentration
