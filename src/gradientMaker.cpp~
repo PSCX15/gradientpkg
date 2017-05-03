@@ -93,7 +93,7 @@ int main(int argc, char **argv)
   compteur=0;  
   ros::init(argc, argv, "gradient");
   ros::NodeHandle n;
-  ros::Subscriber sub = n.subscribe("donneesParticules",1000,donneesCallback);
+  ros::Subscriber sub = n.subscribe("donnees",1000,donneesCallback);
   pub = n.advertise<gradientpkg::gradient>("ggradient",1000);
   ros::spin();
 
